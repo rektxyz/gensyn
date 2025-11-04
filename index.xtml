@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gensyn Peer Viewer</title>
+  </head>
+  <body>
+    <h2>🔍 Gensyn Peer Data Viewer</h2>
+    <input id="peerId" placeholder="Enter Peer ID" />
+    <button id="load">Load</button>
+    <pre id="result" style="white-space: pre-wrap;"></pre>
+
+    <script>
+      document.getElementById("load").onclick = async () => {
+        const peer = document.getElementById("peerId").value.trim();
+        if (!peer) return alert("Enter a peer ID");
+        const res = await fetch(`https://YOUR-RENDER-URL.onrender.com/api/peer/${peer}`);
+        const data = await res.json();
+        document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+      };
+    </script>
+  </body>
+</html>

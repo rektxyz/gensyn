@@ -338,4 +338,6 @@ source .venv/bin/activate
 Your node is now updated and running successfully! 🌟
 
 
+<h3 align="center">Successful node looks like this ✅</h3>
 
+<img width="1095" height="954" alt="image" src="https://github.com/user-attachments/assets/35e6b464-eca8-47d0-9a6b-3c8a32573351" />

@@ -1,4 +1,3 @@
-# 💻 Gensyn-ai-Rl-Swarm Guide (Mac/Linux/VPS) 💻
 
 ## 🖥️ Device/System Requirements
 
@@ -341,3 +340,38 @@ Your node is now updated and running successfully! 🌟
 <h3 align="center">Successful node looks like this ✅</h3>
 
 <img width="1095" height="954" alt="image" src="https://github.com/user-attachments/assets/35e6b464-eca8-47d0-9a6b-3c8a32573351" />
+
+
+<h2 align="center">⚠️ NEW ERROR (UPDATE) ⚠️</h2>
+<img width="1227" height="1231" alt="image" src="https://github.com/user-attachments/assets/fc0ebd8f-5e0d-46d2-8ce1-f9b5655f06e8" />
+
+### This error is now being faced by everyone in . The only solution for this is to restart the node
+1.
+```bash
+./run_rl_swarm.sh
+```
+2.
+ ```bash
+bash run_rl_swarm.sh
+```
+3.
+```bash
+deactivate && rm -rf .venv && python3 -m venv .venv && source .venv/bin/activate && bash run_rl_swarm.sh
+```
+4.
+```bash
+pkill -f rl-swarm || true && bash run_rl_swarm.sh
+```
+5.
+```bashv
+deactivate && rm -rf .venv && python3 -m venv .venv && source .venv/bin/activate && pip install --force-reinstall gensyn-genrl
+```
+```bash
+/run_rl_swarm.sh
+```
+
+### ✅ You can try restarting using these 5 solutions to see if the problem is resolved.
+
+### 🛑 If it doesn’t work, try again after a few minutes.
+
+### ryvexbt
